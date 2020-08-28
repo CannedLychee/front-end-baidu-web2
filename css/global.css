@@ -1,0 +1,44 @@
+@font-face {
+	font-family: ProximaNova;
+	src: url(../font/ProximaNova-Regular.otf);
+	font-style: Regular;
+}
+
+@font-face {
+	font-family: ProximaNova;
+	src: url(../font/ProximaNova-Semibold.ttf);
+	font-style: Semibold;
+}
+
+.content {
+	background-color: beige;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.menu_primary {
+	background-color: #1d2531;
+	position: relative;
+	left:0;
+	height: 100%;
+	width: 100px;
+}
+.menu_secondary {
+	background-color: #222c3c;
+	position: relative;
+	left:0;
+	height: 100%;
+	width: 250px;
+}
+.chat {
+	background-color: azure;
+	position: relative;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
