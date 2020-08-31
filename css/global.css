@@ -9,9 +9,25 @@
 	src: url(../font/ProximaNova-Semibold.ttf);
 	font-style: Semibold;
 }
+button,input {
+	outline:none;
+	border:none;
+}
+
+body html{
+	overflow: hidden;
+	height: 100%;
+}
+
+.back {
+	position: fixed;
+	padding-top: 900px;
+	padding-left: 1280px;
+	z-index: -1;
+}
 
 .content {
-	background-color: beige;
+	/* background-color: beige; */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -35,7 +51,7 @@
 	width: 250px;
 }
 .chat {
-	background-color: azure;
+	/* background-color: azure; */
 	position: relative;
 	left: 0;
 	right: 0;

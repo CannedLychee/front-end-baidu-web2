@@ -7,10 +7,13 @@
 			@import url("./css/global.css");
 			@import url("./css/menu_primary.css");
 			@import url("./css/menu_secondary.css");
+			@import url("./css/chat.css");
+			@import url("./css/chatlist.css");
 		</style>
-	</head>
+	</head>	
 
 	<body>
+		<div class="back"></div>
 		<div class="content">
 			<div class="menu_primary">
 				<div class="items">
@@ -73,9 +76,7 @@
 						<p>What's New</p>
 					</div>
 				</div>
-
-				<img class="divider" src="./static/menu-secondary/Divider.png" />
-
+				<img class="divider1" src="./static/menu-secondary/Divider.png" />
 				<div class="part2">
 					<div class="menu">
 						<p>YOUR PRODUCTS</p>
@@ -98,9 +99,155 @@
 						<p>Infographics</p>
 					</div>
 				</div>
-				<div class="part3"></div>
+				<img class="divider2" src="./static/menu-secondary/Divider.png" />	
+				<div class="part3">
+					<div class="menu">
+						<p>DASHBOARD</p>
+						<img src="./static/menu-secondary/p1_Settings.png" />
+					</div>
+					<img class="activeat" src="./static/menu-secondary/Active Highlight.png"/>
+					<div class="menuItem">
+						<div class="nowat">Messages</div>
+						<span>21</span>
+						<img src="./static/menu-secondary/menu-Base.png" />
+					</div>
+					<div class="menuItem">
+						<p>Connections</p>
+					</div>
+					<div class="menuItem">
+						<p>Integrations</p>
+					</div>
+					<div class="menuItem">
+						<p>Account Settings</p>
+					</div>
+					<div class="alert">
+						<img class="alert-front" src="./static/menu-secondary/alert-front.png"/>
+						<img class="alert-base" src="./static/menu-secondary/alert-Base.png" />
+					</div>
+					<div class="menuItem">
+						<p>App Settings</p>
+					</div>
+				</div>
 			</div>
-			<div class="chat"></div>
+			<div class="chat">
+				<div class="chat_header">
+					<div class="chat_title">Messages</div>
+					<div class="chat_profile">
+						<div class="chat_picon">
+							<img class="picon1"	src="./static/chat/user/main.png" />
+							<img class="picon2" src="./static/chat/user/Status.png" />
+						</div>
+						<div class="chat_pusername">
+							<p1>Jordan J.</p1>
+							<p2>Administrator</p2>
+						</div>
+						<div class="chat_pdropdown">
+							<img src="./static/chat/dropdown.png" />
+						</div>
+					</div>
+				</div>
+				<div class="chat_content">
+					<div class="chat_list">
+						<div class="chat_listheader">
+							<div class="chat_searchbar">
+								<input placeholder="Search"/>
+								<img src="./static/chat/search.png" />
+							</div>
+						</div>
+						<div class="chat_chatlist">
+							<div class="cl_user">
+								<img src="./static/chat/user/user2.png" />
+								<h1>Victor Weber</h1>
+								<h2>Adobe</h2>
+								<h3>8m</h3>
+								<p>I shared this on my fb wall a few months back, and I thought I'd share it here again because it's such a great...</p>
+							</div>
+							<div class="cl_user">
+								<img src="./static/chat/user/user3.png" />
+								<h1>Dustin Benson</h1>
+								<h2>Facebook</h2>
+								<h3>Yesterday</h3>
+								<p>If there is anyone who needs an invitation please add yourself in the comments of this post!</p>
+							</div>
+							<div class="cl_user">
+								<img src="./static/chat/user/user4.png" />
+								<h1>Jack Mason</h1>
+								<h2>Yahoo</h2>
+								<h3>Yesterday</h3>
+								<p>BruteDC is a peer-to-peer movie+tv series sharing and downloading platform which works on intranet inside...</p>
+							</div>
+							<div class="cl_user">
+								<img src="./static/chat/user/user5.png" />
+								<h1>Stephen Shelton</h1>
+								<h2>Snapchat</h2>
+								<h3>13 Jun</h3>
+								<p>Yes, p2p traffic is often filtered (QoSed). Although i do use BT on O2 wires, and in good days dl speed...</p>
+							</div>
+							<div class="cl_user">
+								<img src="./static/chat/user/user6.png" />
+								<h1>Sally Willis</h1>
+								<h2>Twitter</h2>
+								<h3>12 Jun</h3>
+								<p>Yes, it's O2: 'internet extreme', which is no longer offered.</p>
+							</div>
+							<div class="cl_user">
+								<img src="./static/chat/user/user7.png" />
+								<h1>Robert Patton</h1>
+								<h2>A Team</h2>
+								<h3>9 Jun</h3>
+								<p>I change my service from this 4Mb plan to their much cheaper 8Mb plan, my speed will dramatically decrease.</p>
+							</div>
+							<div class="cl_user">
+								<img src="./static/chat/user/user7.png" />
+								<h1>Robert Patton</h1>
+								<h2>A Team</h2>
+								<h3>9 Jun</h3>
+								<p>I change my service from this 4Mb plan to their much cheaper 8Mb plan, my speed will dramatically decrease.</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="chat_window">
+						<div class="chat_toolbar">
+							<div class="chat_name">
+								<p>Bessie Berry</p>
+								<img src="./static/chat/Status.png" />
+							</div>
+							<div class="chat_tools">
+								<div class="chat_t_user">
+									<img class="useroff" src="./static/chat/User-off.png" />
+									<img class="useron" src="./static/chat/User-on.png" />
+								</div>
+								<div class="chat_t_upload">
+									<img class="uploadoff" src="./static/chat/Upload-off.png" />
+									<img class="uploadon" src="./static/chat/Upload-on.png" />
+								</div>
+								<div class="chat_t_trash">
+									<img class="trashoff" src="./static/chat/trash-off.png" />
+									<img class="trashon" src="./static/chat/trash-on.png" />
+								</div>
+							</div>
+							<div class="chat_divider">
+								<img src="./static/chat/Divider.png" height="28px"/>
+							</div>
+							<div class="chat_paging">
+								<div class="pageindex">1 of 28</div>
+								<div class="chat_pageup">
+									<img class="pageupoff" src="./static/chat/pageup-off.png" />
+									<img class="pageupon" src="./static/chat/pageup-on.png" />
+								</div>
+								<div class="chat_pagedown">
+									<img class="pagedownoff" src="./static/chat/pagedown-off.png" />
+									<img class="pagedownon" src="./static/chat/pagedown-on.png" />
+								</div>
+							</div>
+						</div>
+						<div class="chat_main">
+
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 

@@ -1,0 +1,408 @@
+.chat_header {
+	position: relative;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 80px;
+	/* background-color: lightsalmon; */
+}
+	.chat_title {
+		position: absolute;
+		top:0;left:30px;
+		font-family: ProximaNova;
+		font-style: Semibold;
+		font-size: 24px;
+		color: #354052;
+		height: 80px;
+		line-height: 80px;
+		user-select: none;
+		-webkit-user-drag: none;
+		/* background-color: lightgray; */
+	}
+	/* #region  chat_profile */
+	.chat_profile {
+		position: absolute;
+		top:0;right:0;
+		width: 230px;height: 100%;
+	}
+		/* #region  picon */
+		.chat_picon {
+			position: absolute;
+			left:0;top:15px;
+			width: 50px;
+			height: 50px;
+		}
+			.picon1 {
+				position: absolute;
+				height: 50px;
+				width: 50px;
+				user-select: none;
+				-webkit-user-drag: none;
+			}
+			.picon2 {
+				position: absolute;
+				right: 3px;
+				bottom: 3px;
+				user-select: none;
+				-webkit-user-drag: none;
+			}
+		/* #endregion */
+		
+		/* #region  pusername */
+		.chat_pusername {
+			width: 85px;
+			height: 40px;
+			position: absolute;
+			top:20px;
+			right: 75px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+			.chat_pusername p1 {
+				font-family: ProximaNova;
+				font-style: semibold;
+				font-size: 16px;
+				font-weight: bold;
+				line-height: 20px;
+				color:#2399f1;
+				user-select: none;
+				-webkit-user-drag: none;
+			}
+			.chat_pusername p2 {
+				font-family: ProximaNova;
+				font-style: semibold;
+				font-size: 14px;
+				line-height: 20px;
+				color:#b5b5b5;
+				user-select: none;
+				-webkit-user-drag: none;
+			}
+		/* #endregion */
+		
+		/* #region  pdropdown */
+		.chat_pdropdown {
+			position: absolute;
+			right: 31px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+			.chat_pdropdown img {
+				width: 11px;
+				user-select: none;
+				-webkit-user-drag: none;
+				opacity: 0.6;
+			}
+			.chat_pdropdown img:hover {
+				opacity: 0.8;
+			}
+			.chat_pdropdown img:active {
+				opacity: 1;
+			}
+		/* #endregion */
+	/* #endregion */
+
+.chat_content {
+	position: absolute;
+	top: 80px;bottom: 0;
+	left:0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	/* background-color: lightgoldenrodyellow; */
+}
+	.chat_list {
+		position: absolute;
+		top: 0;bottom: 0;
+		left:0;
+		height: 100%;
+		width: 400px;
+		/* background-color: lightcoral; */
+	}
+		/* #region  listsearchbar */
+		.chat_listheader {
+			position: absolute;
+			top: 0;
+			width: 400px;
+			height: 70px;
+			border-top:0.5px solid #e6e9ec;
+			border-right:0.5px solid #e6e9ec;
+			border-bottom:0.5px solid #e6e9ec;
+		}
+			.chat_searchbar {
+				position: absolute;
+				top:16px;bottom:18px;
+				left: 30px;right: 30px;
+				width: 340px;
+				height: 36px;
+			}
+				/* #region  input */
+				.chat_searchbar input {
+					position: absolute;
+					padding-left: 15px;
+					padding-right: 15px;
+					height: 34px;
+					width: 310px;
+					background-color: transparent;
+					border: 0.3px solid #e5e8ee;
+					border-radius: 3px;
+					
+					font-family: ProximaNova;
+					font-style: semibold;
+					font-size: 14px;
+					color:#9fa9ba;
+					z-index: 3;
+				}
+				.chat_searchbar input::placeholder {
+					color:#9fa9baaa;
+				}
+				.chat_searchbar input:focus {
+					border:0.3px solid #9fa9ba;
+				}
+				/* #endregion */
+				/* #region  img */
+				.chat_searchbar img {
+					position: absolute;
+					top:10px;
+					right:16px;
+					width: 16px;
+					user-select: none;
+					opacity: 0.5;
+					z-index: 4;
+					-webkit-user-drag: none;
+				}
+				.char_searchbar img:hover {
+					opacity: 0.8;
+				}
+				.chat_searchbar img:active {
+					opacity: 1;
+				}
+				/* #endregion */
+		/* #endregion */
+		.chat_chatlist{
+			position: absolute;
+			top:70px;
+			bottom: 0;
+			height: auto;
+			width: 100%;
+			/* background-color: #9fa9ba; */
+			border-right: 0.5px solid #e5e8ee;
+		}
+
+	.chat_window {
+		position: absolute;
+		top:0;
+		left: 400px;right: 0;
+		height: 100%;
+		/* background-color: lightskyblue; */
+	}
+		/* #region  toolbar */
+		.chat_toolbar {
+			position: absolute;
+			top:0;
+			width: 100%;
+			height: 70px;
+			border-top: 0.5px solid #e5e8ee;
+			border-bottom: 0.5px solid #e5e8ee;
+		}
+			/* #region  name */
+			.chat_name {
+				position: absolute;
+				top: 0;bottom: 0;
+				left: 30px;
+				margin: auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				user-select: none;
+				-webkit-user-drag: none;
+			}
+				.chat_name p{
+					font-family: ProximaNova;
+					font-style: Semibold;
+					font-size: 18px;
+					color: #585d68;
+				}
+				.chat_name img{
+					height: 8px;
+					width: 8px;
+					margin-left: 10px;
+				}
+			/* #endregion */
+		
+			/* #region  tools */
+			.chat_tools {
+				position: absolute;
+				top: 18px;
+				right: 195px;
+				width: 109px;
+				height: 32px;
+				display: flex;
+				flex-direction: row;
+			}
+				/* #region  user */
+				.chat_t_user {
+					height: 32px;
+					width: 36px;
+					position: absolute;
+					left: 0;
+				}
+					.useroff {
+						position: absolute;
+						opacity: 1;
+						z-index: 10;
+						user-select: none;
+						-webkit-user-drag: none;
+					}
+					.useron {
+						position: absolute;
+						opacity: 1;
+						z-index: 9;
+						user-select: none;
+						-webkit-user-drag: none;
+					}
+					.useroff:active {
+						opacity: 0;
+					}
+				/* #endregion */
+				/* #region  upload */
+				.chat_t_upload {
+					height: 32px;
+					width: 36px;
+					position: absolute;
+					left: 36px;
+				}
+					.uploadoff {
+						position: absolute;
+						opacity: 1;
+						z-index: 10;
+						user-select: none;
+						-webkit-user-drag: none;
+					}
+					.uploadon {
+						position: absolute;
+						opacity: 1;
+						z-index: 9;
+						user-select: none;
+						-webkit-user-drag: none;
+					}
+					.uploadoff:active {
+						opacity: 0;
+					}
+				/* #endregion */
+				/* #region  user */
+				.chat_t_trash {
+					height: 32px;
+					width: 36px;
+					position: absolute;
+					right: 0px;
+				}
+					.trashoff {
+						position: absolute;
+						opacity: 1;
+						z-index: 10;
+						user-select: none;
+						-webkit-user-drag: none;
+					}
+					.trashon {
+						position: absolute;
+						opacity: 1;
+						z-index: 9;
+						user-select: none;
+						-webkit-user-drag: none;
+					}
+					.trashoff:active {
+						opacity: 0;
+					}
+				/* #endregion */
+			/* #endregion */
+			
+			.chat_divider {
+				position: absolute;
+				top: 19px;
+				right: 172px;
+				user-select: none;
+						-webkit-user-drag: none;
+			}
+
+			/* #region  paging */
+			.chat_paging {
+				position: absolute;
+				top: 18px;
+				right: 20px;
+				width: 130px;
+				height: 32px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+				.pageindex {
+					font-family: ProximaNova;
+					font-style: semibold;
+					font-size: 14px;
+					color:#56688a;
+					user-select: none;
+					-webkit-user-drag: none;
+				}
+				/* #region  pageup */
+				.chat_pageup {
+					position: absolute;
+					top:0;
+					right:36px;
+					height: 32px;
+					width: 37px;
+				}
+				.pageupoff {
+					position: absolute;
+					opacity: 1;
+					z-index: 10;
+					user-select: none;
+					-webkit-user-drag: none;
+				}
+				.pageupon {
+					position: absolute;
+					opacity: 1;
+					z-index: 9;
+					user-select: none;
+					-webkit-user-drag: none;
+				}
+				.pageupoff:active {
+					opacity: 0;
+				}
+				/* #endregion */
+
+				/* #region  pagedown */
+				.chat_pagedown {
+					position: absolute;
+					top:0;
+					right: 0px;
+					height: 32px;
+					width: 36px;
+				}
+				.pagedownoff {
+					position: absolute;
+					opacity: 1;
+					z-index: 10;
+					user-select: none;
+					-webkit-user-drag: none;
+				}
+				.pagedownon {
+					position: absolute;
+					opacity: 1;
+					z-index: 9;
+					user-select: none;
+					-webkit-user-drag: none;
+				}	
+				.pagedownoff:active {
+					opacity: 0;
+				}
+				/* #endregion */
+			/* #endregion */
+		/* #endregion */
+		.chat_main {
+			background-color: transparent;
+		}

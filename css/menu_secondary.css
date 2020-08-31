@@ -16,6 +16,7 @@
 		font-style: Semibold;
 		font-size: 14px;
 		color: #ffffff;
+		user-select: none;
 	}
 	.now {
 		position: absolute;
@@ -24,12 +25,14 @@
 		font-style: Semibold;
 		font-size: 14px;
 		color: #ffffff;
+		user-select: none;
 	}
 
 	.bar_fill {
 		position: absolute;
 		bottom: 0; left: 0;
 		height: 4px;
+		user-select: none;
 	}
 
 	.bar_base {
@@ -37,6 +40,7 @@
 		bottom:0;
 		width: 100%;
 		height: 4px;
+		user-select: none;
 	}
 /* #endregion */
 
@@ -51,6 +55,7 @@
 	padding-right: 30px;
 	display: flex;
 	flex-direction: column;
+	user-select: none;
 }
 	/* #region  menu */
 	.menu {
@@ -70,6 +75,7 @@
 			top:-12px;
 			left:0;
 			color: #5b6779;
+			user-select: none;
 		}
 		/* #region  menu_img */
 		.menu img {
@@ -79,6 +85,7 @@
 			height: 16px;
 			width: 16px;
 			opacity: 0.6;
+			user-select: none;
 		}
 		.menu img:hover {
 			opacity: 0.8;
@@ -94,6 +101,7 @@
 			width: 190px;
 			height: 24px;
 			margin-top:12px;
+			user-select: none;
 		}
 		.menuItem p {
 			font-family: ProximaNova;
@@ -101,7 +109,7 @@
 			font-size: 14px;
 			line-height: 0px;
 			color: #b7c0cd;
-			-webkit-user-select: none;
+			user-select: none;
 		}
 		.menuItem p:hover {
 			color: #d7dce4;
@@ -113,33 +121,41 @@
 			font-family: ProximaNova;
 			font-style: semibold;
 			font-size: 14px;
+			text-align: center;
+			width: 32px;
 			color: #ffffff;
 			position: absolute;
 			top:5px;
-			right:7px;
+			right:0px;
 			z-index: 2;
+			user-select: none;
 		}
 		.menuItem img {
 			position: absolute;
+			width: 32px;
 			top:0;
 			right:0;
 			z-index: 1;
+			user-select: none;
+			-webkit-user-drag: none;
 		}
 		/* #endregion */
 	/* #endregion */
 /* #endregion */
 
-.divider{
+.divider1{
 	position: absolute;
 	top:255px;
 	left:30px;
 	width: 190px;
+	user-select: none;
 }
 
+/* #region  part2 */
 .part2 {
 	position: relative;
 	width: 190px;
-	height: 200px;
+	height: 190px;
 	margin-top: 30px;
 	margin-bottom: 0px;
 	padding-left: 30px;
@@ -155,27 +171,110 @@
 		margin-top:12px;
 		display: flex;
 		flex-direction: row;
+		user-select: none;
 	}
-	.productItem img{
-		position: relative;
-		top:0;bottom:0;
-		margin:auto;
-		margin-left: 0;
-		width: 18px;
-	}
-	.productItem p {
-		position: absolute;
-		left: 30px;
+		.productItem img{
+			position: relative;
+			top:0;bottom:0;
+			margin:auto;
+			margin-left: 0;
+			width: 18px;
+			user-select: none;
+		}
+		/* #region  productItem p */
+		.productItem p {
+			position: absolute;
+			left: 30px;
+			font-family: ProximaNova;
+			font-style: semibold;
+			font-size: 14px;
+			line-height: 0px;
+			color: #99a1ae;
+			-webkit-user-select: none;
+		}
+		.productItem  p:hover{
+			color: #d7dce4;
+		}
+		.productItem  p:active{
+			color: #ffffff;
+		}
+		/* #endregion */
+/* #endregion */
+
+.divider2{
+	position: absolute;
+	top:475px;
+	left:30px;
+	width: 190px;
+	user-select: none;
+}
+
+/* #region  part3 */
+.part3 {
+	position: relative;
+	width: 190px;
+	height: 225px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	user-select: none;
+}
+	/* #region  nowat */
+	.nowat {
 		font-family: ProximaNova;
 		font-style: semibold;
-		font-size: 14px;
-		line-height: 0px;
-		color: #99a1ae;
-		-webkit-user-select: none;
+		font-weight: 900;
+		font-size: 16px;
+		line-height: 23px;
+		color: #ffffff;
+		user-select: none;
 	}
-	.productItem  p:hover{
-		color: #d7dce4;
+	.nowat:hover {
+		color: #e6e6e6;
 	}
-	.productItem  p:active{
+	.nowat:active {
 		color: #ffffff;
 	}
+	/* #endregion */
+
+	.activeat {
+		height: 20px;
+		position: absolute;
+		left: 0px;
+		top: 27px;
+		user-select: none;
+	}
+
+	/* #region  alert */
+	.alert {
+		position: absolute;
+		top:100px;
+		right: 30px;
+		width: 24px;
+		height: 24px;
+	}
+	.alert-front {
+		height: 8px;
+		z-index: 2;
+		position: absolute;
+		top: 0;bottom: 0;
+		left: 0;right: 0;
+		margin: auto;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+	.alert-base {
+		width: 24px;
+		z-index: 1;
+		position: absolute;
+		top: 0;bottom: 0;
+		left: 0;right: 0;
+		margin: auto;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+	/* #endregion */
+/* #endregion */
