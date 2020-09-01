@@ -1,50 +1,207 @@
-.cl_user {
-	width: 100%;
+
+.chat_chatlist {
+	overflow-y: auto;
+	overflow-x: auto;
+	z-index: 8;
+}
+.chat_chatlist::-webkit-scrollbar {
+	width: 5px;
+	height: 1px;
+	z-index: 10;
+}
+.chat_chatlist::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #36363611;
+}
+:hover::-webkit-scrollbar-thumb{
+	background-color: #36363633;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: #36363655;
+}
+.chat_chatlist::-webkit-scrollbar-track {
+	background-color: #e2e2e233;
+}
+
+.cl_mainuser {
+	width: 400px;
 	height: 130px;
 	position: relative;
 	top:0;left:0;
 	border-bottom: 1px solid #e6e9ec;
+	user-select: none;
+	-webkit-user-drag: none;
 }
-.cl_user img {
-	position: absolute;
-	top: 25px;
-	left: 25px;
-	height: 50px;
+.cl_mainuser:hover {
+	background-color: #e2e2e233;
 }
-.cl_user h1 {
-	font-family: ProximaNova;
-	font-style: semibold;
-	font-size: 16px;
-	color: #585d68;
-	position: absolute;
-	top: 22px;
-	left: 95px;
+.cl_mainuser:active {
+	background-color: #e2e2e2;
 }
-.cl_user h2 {
-	font-family: ProximaNova;
-	font-style: semibold;
-	font-size: 14px;
-	color: #b5b5b5;
-	position: absolute;
-	top: 43px;
-	left: 95px;
+	.cl_mainuser span {
+		position: absolute;
+		left:0;
+		height: 100%;
+		width: 5px;
+		background-color: #2399f1;
+	}
+	.cl_now {
+		position: absolute;
+		left: 96px;
+		top: 36px;
+		height: 8px;
+		width: 8px;
+	}
+	.cl_now img {
+		position: absolute;
+		top: 0;left: 0;
+		height: 8px;
+	}
+	.cl_mainicon{
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		height: 50px;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+	.cl_mainuser h1 {
+		font-family: ProximaNova;
+		font-style: semibold;
+		font-size: 16px;
+		color: #00aaff;
+		position: absolute;
+		top: 22px;
+		left: 110px;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+	.cl_mainuser h2 {
+		font-family: ProximaNova;
+		font-style: semibold;
+		font-size: 14px;
+		color: #b5b5b5;
+		position: absolute;
+		top: 43px;
+		left: 95px;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+	.cl_mainuser h3 {
+		font-family: ProximaNova;
+		font-style: semibold;
+		font-size: 14px;
+		color: #7f8fa4;
+		position: absolute;
+		top: 25px;
+		right:25px;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+	.cl_mainuser p {
+		font-family: ProximaNova;
+		font-style: semibold;
+		font-size: 14px;
+		color: #585d68;
+		position: absolute;
+		bottom: 0px;
+		left: 25px;
+		width: 330px;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+	.cl_notif {
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
+		height: 24px;
+		width: 24px;
+	}
+	.cl_notif img {
+		position: absolute;
+		top:0;left:0;
+		z-index: 5;
+	}
+	.cl_notif p {
+		position: absolute;
+		top:-8px;left:0;
+		width: 24px;
+		text-align: center;
+		font-family: ProximaNova;
+		font-style: semibold;
+		font-size: 14px;
+		color: #ffffff;
+		z-index: 10;
+	}
+
+
+/* #region  user */
+.cl_user {
+	width: 400px;
+	height: 130px;
+	position: relative;
+	top:0;left:0;
+	border-bottom: 1px solid #e6e9ec;
+	user-select: none;
+	-webkit-user-drag: none;
 }
-.cl_user h3 {
-	font-family: ProximaNova;
-	font-style: semibold;
-	font-size: 14px;
-	color: #7f8fa4;
-	position: absolute;
-	top: 25px;
-	right:25px;
+.cl_user:hover {
+	background-color: #e2e2e233;
 }
-.cl_user p {
-	font-family: ProximaNova;
-	font-style: semibold;
-	font-size: 14px;
-	color: #585d68;
-	position: absolute;
-	bottom: 0px;
-	left: 25px;
-	width: 360px;
+.cl_user:active {
+	background-color: #e2e2e2;
 }
+	.cl_user img {
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		height: 50px;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+	.cl_user h1 {
+		font-family: ProximaNova;
+		font-style: semibold;
+		font-size: 16px;
+		color: #585d68;
+		position: absolute;
+		top: 22px;
+		left: 95px;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+	.cl_user h2 {
+		font-family: ProximaNova;
+		font-style: semibold;
+		font-size: 14px;
+		color: #b5b5b5;
+		position: absolute;
+		top: 43px;
+		left: 95px;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+	.cl_user h3 {
+		font-family: ProximaNova;
+		font-style: semibold;
+		font-size: 14px;
+		color: #7f8fa4;
+		position: absolute;
+		top: 25px;
+		right:25px;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+	.cl_user p {
+		font-family: ProximaNova;
+		font-style: semibold;
+		font-size: 14px;
+		color: #585d68;
+		position: absolute;
+		bottom: 0px;
+		left: 25px;
+		width: 360px;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+/* #endregion */

@@ -120,7 +120,6 @@
 		left:0;
 		height: 100%;
 		width: 400px;
-		/* background-color: lightcoral; */
 	}
 		/* #region  listsearchbar */
 		.chat_listheader {
@@ -155,6 +154,8 @@
 					font-size: 14px;
 					color:#9fa9ba;
 					z-index: 3;
+					user-select: none;
+					-webkit-user-drag: none;
 				}
 				.chat_searchbar input::placeholder {
 					color:#9fa9baaa;
@@ -188,7 +189,6 @@
 			bottom: 0;
 			height: auto;
 			width: 100%;
-			/* background-color: #9fa9ba; */
 			border-right: 0.5px solid #e5e8ee;
 		}
 
@@ -197,7 +197,6 @@
 		top:0;
 		left: 400px;right: 0;
 		height: 100%;
-		/* background-color: lightskyblue; */
 	}
 		/* #region  toolbar */
 		.chat_toolbar {
@@ -404,5 +403,11 @@
 			/* #endregion */
 		/* #endregion */
 		.chat_main {
-			background-color: transparent;
+			position: absolute;
+			left:0px;right:0px;
+			width: auto;
+			top:70px;bottom:0px;
+			overflow-y: auto;
+			display: flex;
+			flex-direction: column;
 		}

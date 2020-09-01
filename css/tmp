@@ -1,0 +1,66 @@
+
+.cm_message {
+	position: relative;
+	left: 0px; right: 0px;
+	top:0px;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	z-index: 10;
+	background-color: wheat;
+}
+	.cm_profile {
+		width: 50px;
+		position: absolute;
+		left: 30px;
+		top: 25px;
+	}
+	/* #region  header */
+	.cm_header {
+		height: 25px;
+		position: relative;
+		/* left: 100px; */
+		top: 20px;
+		display: flex;
+		flex-direction: row;
+		background-color: azure;
+		z-index: 7;
+	}
+		.cm_header h1 {
+			position: relative;
+			left:0;
+			font-family: ProximaNova;
+			font-style: semibold;
+			font-size: 16px;
+			line-height: 20px;
+			color:#585d68;
+			user-select: none;
+			-webkit-user-drag: none;
+		}
+		.cm_header h2 {
+			position: relative;
+			left: 10px;
+			font-family: ProximaNova;
+			font-style: semibold;
+			font-size: 14px;
+			line-height: 20px;
+			color:#7f8fa4;
+			user-select: none;
+			-webkit-user-drag: none;
+		}
+	/* #endregion */
+	.cm_content {
+		position: relative;
+		top: 50px;
+		/* left: 100px;right: 60px; */
+		font-family: ProximaNova;
+		font-style: Regular;
+		font-size: 14px;
+		line-height: 19px;
+		color:#585d68;
+		user-select: none;
+		-webkit-user-drag: none;
+		background-color: chartreuse;
+		z-index: 7;
+	}
